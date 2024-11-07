@@ -130,4 +130,72 @@
 
 // dom - 
 
-console.log("hello world");  
+// console.log("hello world");  
+
+// const div=document.getElementById('divname');
+// const h1=document.createElement("h1");
+// console.log(h1);
+// h1.innerText="ABES ENGINEERING COLLEGE";
+// console.log(h1);
+// div.appendChild(h1);
+// // console.group(div)
+// h1.style.backgroundColor="cyan";
+// h1.style.margin="10px"
+
+
+// const img=document.createElement('img');
+// img.src="./cat.jpeg"
+// console.log(img);
+// div.appendChild(img);
+// img.setAttribute("height","300");
+// img.setAttribute("width","200px");
+
+
+// function getdata(){
+//    alert("you have submitted the data");
+// }
+
+// const button=getElementById('btn');
+// console.log(button);
+// button.addEventListener("click",getdata);
+
+// const promises=new Promise((resolve,reject)=>{
+//    let a=12;
+//    if(a>10){
+//       resolve("accepted");
+//    }
+//    else{
+//       reject("not accepted");
+//    }
+// })
+
+// promises.then((msg)=>{
+//    console.log(msg);
+// })
+// .catch((error)=>{
+//    console.log(error);
+// })
+// .finally(()=>{
+//    console.log("All resources have been closed");
+// })
+
+
+
+// const promise2=new Promise((resolve,reject)=>{
+//    resolve({name:"riya sharma" , stack:"Java"})
+// });
+// promise2.then((msg)=>{
+//    console.log("inside loop")
+// })
+// .catch((error)=>{
+//    console.log(error);
+// })
+
+
+const response=fetch("https://dummyjson.com/products");
+response.then((data)=>{
+   console.log(data);
+   data.json().then((res)=>{
+      console.log(res);
+   })
+})
